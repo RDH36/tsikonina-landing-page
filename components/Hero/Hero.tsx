@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary rounded-full opacity-40 z-0 blur-2xl"></div>
           <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-secondary rounded-full opacity-40 z-0 blur-2xl"></div>
           <div className="absolute -left-12 top-16 z-20 animate-float-dish-left">
-            <div className="dish-overlay">
+            <div>
               <Image
                 src="/images/ravitoto.png"
                 alt="Romazava - Plat traditionnel malgache"
@@ -68,7 +68,7 @@ export default function Hero() {
             className="absolute -right-12 bottom-32 z-20 animate-float-dish-right"
             style={{ animationDelay: "2s" }}
           >
-            <div className="dish-overlay">
+            <div>
               <Image
                 src="/images/ravitoto.png"
                 alt="Ravitoto - Plat traditionnel malgache"
