@@ -17,9 +17,11 @@ export default function PopularDishes() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="https://placehold.co/400x300"
                 alt="Romazava"
                 className="w-full h-full object-cover"
+                width={400}
+                height={300}
               />
             </div>
             <div className="p-6">
@@ -38,9 +40,11 @@ export default function PopularDishes() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="https://placehold.co/400x300"
                 alt="Ravitoto"
                 className="w-full h-full object-cover"
+                width={400}
+                height={300}
               />
             </div>
             <div className="p-6">
@@ -59,9 +63,11 @@ export default function PopularDishes() {
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
             <div className="h-48 overflow-hidden">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="https://placehold.co/400x300"
                 alt="Mofo Gasy"
                 className="w-full h-full object-cover"
+                width={400}
+                height={300}
               />
             </div>
             <div className="p-6">

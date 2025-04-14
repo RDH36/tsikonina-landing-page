@@ -10,19 +10,19 @@ export default function ScreenShoot() {
       title: "Découvrir la Cuisine Malgache",
       description:
         "Explorez des recettes authentiques de toutes les régions de Madagascar",
-      image: "/placeholder.svg?height=600&width=300",
+      image: "https://placehold.co/400x600",
     },
     {
       title: "Méthodes de Cuisson Traditionnelles",
       description:
         "Apprenez les techniques authentiques avec des guides pas à pas",
-      image: "/placeholder.svg?height=600&width=300",
+      image: "https://placehold.co/400x600",
     },
     {
       title: "Contexte Culturel",
       description:
         "Comprenez l'histoire et la signification derrière chaque plat",
-      image: "/placeholder.svg?height=600&width=300",
+      image: "https://placehold.co/400x600",
     },
   ]
   return (
@@ -42,9 +42,14 @@ export default function ScreenShoot() {
           <div className="lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
             <MobileFrame>
               <Image
-                src={screenshots[activeScreenshot].image || "/placeholder.svg"}
+                src={
+                  screenshots[activeScreenshot].image ||
+                  "https://placehold.co/400x600"
+                }
                 alt={screenshots[activeScreenshot].title}
                 className="w-full h-full object-cover"
+                width={400}
+                height={600}
               />
             </MobileFrame>
           </div>
@@ -55,8 +60,8 @@ export default function ScreenShoot() {
                   key={index}
                   className={`p-6 rounded-xl cursor-pointer transition-all ${
                     activeScreenshot === index
-                      ? "bg-red-100 border-l-4 border-red-700"
-                      : "bg-white hover:bg-red-50"
+                      ? "bg-primary/10 border-l-4 border-primary"
+                      : "bg-white hover:bg-primary/10"
                   }`}
                   onClick={() => setActiveScreenshot(index)}
                 >

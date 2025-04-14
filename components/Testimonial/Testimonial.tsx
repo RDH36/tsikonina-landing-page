@@ -8,19 +8,19 @@ export default function Testimonial() {
       name: "Ravaka M.",
       text: "Tsikonina m'a aidé à renouer avec mon héritage malgache à travers la cuisine. Les recettes sont vraiment authentiques !",
       rating: 5,
-      image: "/placeholder.svg?height=100&width=100",
+      image: "https://placehold.co/100x100",
     },
     {
       name: "Jean-Pierre R.",
       text: "Vivant à l'étranger, la cuisine malgache me manquait. Cette application apporte les saveurs de chez moi dans ma cuisine avec des instructions faciles.",
       rating: 5,
-      image: "/placeholder.svg?height=100&width=100",
+      image: "https://placehold.co/100x100",
     },
     {
       name: "Sarah L.",
       text: "Je suis tombée amoureuse de Madagascar lors de mes voyages. Tsikonina m'aide à recréer ces saveurs merveilleuses chez moi.",
       rating: 4,
-      image: "/placeholder.svg?height=100&width=100",
+      image: "https://placehold.co/100x100",
     },
   ]
   return (
@@ -39,9 +39,11 @@ export default function Testimonial() {
             <div key={index} className="bg-red-50 rounded-xl p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 <Image
-                  src={testimonial.image || "/placeholder.svg"}
+                  src={testimonial.image || "https://placehold.co/100x100"}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover mr-4"
+                  width={100}
+                  height={100}
                 />
                 <div>
                   <h4 className="font-bold text-gray-800">

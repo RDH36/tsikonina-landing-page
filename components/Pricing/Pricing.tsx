@@ -22,28 +22,28 @@ export default function Pricing() {
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
-                <Check className="h-5 w-5 text-red-700 mr-2" />
+                <Check className="h-5 w-5 text-primary mr-2" />
                 <span>Accès aux recettes malgaches de base</span>
               </li>
               <li className="flex items-center">
-                <Check className="h-5 w-5 text-red-700 mr-2" />
+                <Check className="h-5 w-5 text-primary mr-2" />
                 <span>Enregistrez jusqu&apos;à 10 favoris</span>
               </li>
               <li className="flex items-center">
-                <Check className="h-5 w-5 text-red-700 mr-2" />
+                <Check className="h-5 w-5 text-primary mr-2" />
                 <span>Fonctionnalité de recherche basique</span>
               </li>
             </ul>
             <Button
               variant="outline"
-              className="w-full border-red-700 text-red-700 hover:bg-red-50"
+              className="w-full border-primary text-primary hover:bg-primary-light/10 hover:text-primary-dark cursor-pointer"
             >
               Télécharger maintenant
             </Button>
           </div>
 
-          <div className="flex-1 bg-red-700 rounded-xl p-8 shadow-lg text-white relative">
-            <div className="absolute top-0 right-0 bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-tr-xl rounded-bl-xl">
+          <div className="flex-1 bg-primary rounded-xl p-8 shadow-lg text-white relative">
+            <div className="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-tr-xl rounded-bl-xl">
               POPULAIRE
             </div>
             <h3 className="text-xl font-bold mb-2">Premium</h3>
@@ -72,7 +72,7 @@ export default function Pricing() {
                 <span>Guides de substitution d&apos;ingrédients</span>
               </li>
             </ul>
-            <Button className="w-full bg-white text-red-700 hover:bg-gray-100">
+            <Button className="w-full bg-white text-primary hover:bg-gray-100 cursor-pointer">
               Obtenir Premium
             </Button>
           </div>

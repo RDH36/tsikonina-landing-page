@@ -26,21 +26,30 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FF8050",
-          dark: "#F53D00",
-          light: "#FFAA80",
+          DEFAULT: "#FF9800",
+          dark: "#F57C00",
+          light: "#FFA726",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
           DEFAULT: "#FFCA28",
-          light: "#FFE082",
-          dark: "#FFB300",
+          light: "#FFD54F",
+          dark: "#FFC107",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        "accent-green": "#4CAF50",
-        "neutral-white": "#FFFFFF",
-        "neutral-light": "#F5F5F5",
-        "neutral-dark": "#333333",
+        accent: {
+          green: "#4CAF50",
+          red: "#F44336",
+          blue: "#2196F3",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        neutral: {
+          white: "#FFFFFF",
+          light: "#F5F5F5",
+          medium: "#9E9E9E",
+          dark: "#616161",
+        },
         "text-primary": "#333333",
         "text-secondary": "#666666",
         destructive: {
@@ -50,10 +59,6 @@ const config: Config = {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
