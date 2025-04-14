@@ -56,7 +56,7 @@ export default function Hero() {
                 alt="Romazava - Plat traditionnel malgache"
                 width={160}
                 height={100}
-                className="rounded-full shadow-lg"
+                className="rounded-full"
                 style={{
                   objectFit: "cover",
                   backgroundColor: "transparent",
@@ -74,7 +74,7 @@ export default function Hero() {
                 alt="Ravitoto - Plat traditionnel malgache"
                 width={140}
                 height={100}
-                className="rounded-full shadow-lg"
+                className="rounded-full"
                 style={{
                   objectFit: "cover",
                   backgroundColor: "transparent",
