@@ -1,10 +1,7 @@
-import { Star } from "lucide-react"
-import { ChevronRight } from "lucide-react"
-import React from "react"
-import { Button } from "../ui/button"
-import { Download } from "lucide-react"
-import MobileFrame from "../mobile-frame"
-import Image from "next/image"
+import { ChevronRight, Download, Star } from "lucide-react";
+import Image from "next/image";
+import MobileFrame from "../mobile-frame";
+import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
@@ -112,7 +109,7 @@ export default function Hero() {
           <div className="relative z-10 animate-float">
             <MobileFrame>
               <Image
-                src="https://placehold.co/400x600"
+                src="/images/bg.png"
                 alt="Interface de l'application Tsikonina montrant une recette de cuisine malgache"
                 className="w-full h-full object-cover"
                 width={400}
@@ -124,5 +121,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
