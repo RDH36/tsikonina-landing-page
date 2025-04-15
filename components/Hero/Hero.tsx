@@ -1,7 +1,7 @@
-import { ChevronRight, Download, Star } from "lucide-react";
-import Image from "next/image";
-import MobileFrame from "../mobile-frame";
-import { Button } from "../ui/button";
+import { ChevronRight, Download, Star } from "lucide-react"
+import Image from "next/image"
+import MobileFrame from "../mobile-frame"
+import { Button } from "../ui/button"
 
 export default function Hero() {
   return (
@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <div>
               <Image
-                src="/images/ravitoto.png"
+                src="/images/romazava.png"
                 alt="Romazava - Bouillon traditionnel malgache aux brèdes et viande"
                 width={140}
                 height={100}
@@ -121,5 +121,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
