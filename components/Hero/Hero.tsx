@@ -1,7 +1,7 @@
-import { ChevronRight, Download, Star } from "lucide-react"
-import Image from "next/image"
-import MobileFrame from "../mobile-frame"
-import { Button } from "../ui/button"
+import { ChevronRight, Download, Star } from "lucide-react";
+import Image from "next/image";
+import MobileFrame from "../mobile-frame";
+import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
@@ -71,13 +71,16 @@ export default function Hero() {
             className="absolute -bottom-8 -right-8 w-40 h-40 bg-secondary rounded-full opacity-40 z-0 blur-2xl"
             aria-hidden="true"
           ></div>
-          <div className="absolute -left-12 top-16 z-20 animate-float-dish-left">
-            <div>
+          <div
+            className="absolute -left-12 top-16 z-20 animate-float-dish-left"
+            style={{ animationDelay: "0.5s" }}
+          >
+            <div className="transform hover:scale-110 transition-transform duration-300">
               <Image
                 src="/images/ravitoto.png"
                 alt="Ravitoto - Plat traditionnel malgache à base de feuilles de manioc pilées"
                 width={160}
-                height={100}
+                height={120}
                 className="rounded-full"
                 style={{
                   objectFit: "cover",
@@ -88,15 +91,15 @@ export default function Hero() {
             </div>
           </div>
           <div
-            className="absolute -right-12 bottom-32 z-20 animate-float-dish-right"
-            style={{ animationDelay: "2s" }}
+            className="absolute -right-12 bottom-40 z-20 animate-float-dish-right"
+            style={{ animationDelay: "1.5s" }}
           >
-            <div>
+            <div className="transform hover:scale-110 transition-transform duration-300">
               <Image
                 src="/images/romazava.png"
                 alt="Romazava - Bouillon traditionnel malgache aux brèdes et viande"
                 width={140}
-                height={100}
+                height={120}
                 className="rounded-full"
                 style={{
                   objectFit: "cover",
@@ -106,7 +109,29 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="relative z-10 animate-float">
+          <div
+            className="absolute -left-12 bottom-20 z-20 animate-float-dish-right"
+            style={{ animationDelay: "2.5s" }}
+          >
+            <div className="transform hover:scale-110 transition-transform duration-300">
+              <Image
+                src="/images/mofo.png"
+                alt="Mofo gasy - Recette de cuisine malgache traditionnelle"
+                width={140}
+                height={120}
+                className="rounded-full"
+                style={{
+                  objectFit: "cover",
+                  backgroundColor: "transparent",
+                }}
+                priority
+              />
+            </div>
+          </div>
+          <div
+            className="relative z-10 animate-float transform hover:scale-105 transition-transform duration-300"
+            style={{ animationDelay: "0.2s" }}
+          >
             <MobileFrame>
               <Image
                 src="/images/bg.png"
@@ -121,5 +146,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
