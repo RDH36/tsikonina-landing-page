@@ -1,7 +1,7 @@
-import { ChevronRight, Download, Star } from "lucide-react";
-import Image from "next/image";
-import MobileFrame from "../mobile-frame";
-import { Button } from "../ui/button";
+import { ChevronRight, Download, Star } from "lucide-react"
+import Image from "next/image"
+import MobileFrame from "../mobile-frame"
+import { Button } from "../ui/button"
 
 export default function Hero() {
   return (
@@ -91,7 +91,7 @@ export default function Hero() {
             </div>
           </div>
           <div
-            className="absolute -right-12 bottom-40 z-20 animate-float-dish-right"
+            className="absolute -right-12 bottom-32 z-20 animate-float-dish-right"
             style={{ animationDelay: "1.5s" }}
           >
             <div className="transform hover:scale-110 transition-transform duration-300">
@@ -146,5 +146,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }
