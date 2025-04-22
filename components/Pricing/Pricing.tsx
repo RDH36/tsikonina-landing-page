@@ -1,6 +1,6 @@
-import { Check } from "lucide-react"
-import React from "react"
-import { Button } from "../ui/button"
+import { Check } from "lucide-react";
+import { DownloadModal } from "../DownloadModal";
+import { Button } from "../ui/button";
 
 export default function Pricing() {
   return (
@@ -34,12 +34,14 @@ export default function Pricing() {
                 <span>Fonctionnalité de recherche basique</span>
               </li>
             </ul>
-            <Button
-              variant="outline"
-              className="w-full border-primary text-primary hover:bg-primary-light/10 hover:text-primary-dark cursor-pointer"
-            >
-              Télécharger maintenant
-            </Button>
+            <DownloadModal>
+              <Button
+                variant="outline"
+                className="w-full border-primary text-primary hover:bg-primary-light/10 hover:text-primary-dark cursor-pointer"
+              >
+                Télécharger Android
+              </Button>
+            </DownloadModal>
           </div>
 
           <div className="flex-1 bg-primary rounded-xl p-8 shadow-lg text-white relative">
@@ -72,12 +74,14 @@ export default function Pricing() {
                 <span>Guides de substitution d&apos;ingrédients</span>
               </li>
             </ul>
-            <Button className="w-full bg-white text-primary hover:bg-gray-100 cursor-pointer">
-              Obtenir Premium
-            </Button>
+            <DownloadModal>
+              <Button className="w-full bg-white text-primary hover:bg-gray-100 cursor-pointer">
+                Obtenir Premium (Android)
+              </Button>
+            </DownloadModal>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-import { Download } from "lucide-react"
-import React from "react"
-import { Button } from "../ui/button"
+import { Download } from "lucide-react";
+import { DownloadModal } from "../DownloadModal";
+import { Button } from "../ui/button";
 
 export default function Cta() {
   return (
@@ -13,15 +13,14 @@ export default function Cta() {
           Téléchargez Tsikonina aujourd&apos;hui et commencez votre voyage à
           travers les riches traditions culinaires de Madagascar.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button className="bg-white text-primary hover:bg-gray-100 h-14 px-8 text-lg cursor-pointer">
-            <Download className="mr-2 h-5 w-5" /> Télécharger pour iOS
-          </Button>
-          <Button className="bg-white text-primary hover:bg-gray-100 h-14 px-8 text-lg cursor-pointer">
-            <Download className="mr-2 h-5 w-5" /> Télécharger pour Android
-          </Button>
+        <div className="flex justify-center">
+          <DownloadModal>
+            <Button className="bg-white text-primary hover:bg-gray-100 h-14 px-8 text-lg cursor-pointer">
+              <Download className="mr-2 h-5 w-5" /> Télécharger pour Android
+            </Button>
+          </DownloadModal>
         </div>
       </div>
     </section>
-  )
+  );
 }

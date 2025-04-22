@@ -1,6 +1,6 @@
-import React from "react"
-import { Button } from "../ui/button"
-import { UtensilsCrossed } from "lucide-react"
+import { UtensilsCrossed } from "lucide-react";
+import { DownloadModal } from "../DownloadModal";
+import { Button } from "../ui/button";
 
 export default function Navigation() {
   return (
@@ -22,7 +22,11 @@ export default function Navigation() {
           Témoignages
         </a>
       </div>
-      <Button className="bg-primary hover:bg-primary/80">Télécharger</Button>
+      <DownloadModal>
+        <Button className="bg-primary hover:bg-primary/80 cursor-pointer">
+          Télécharger pour Android
+        </Button>
+      </DownloadModal>
     </nav>
-  )
+  );
 }

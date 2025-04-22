@@ -1,7 +1,9 @@
-import { ChevronRight, Download, Star } from "lucide-react"
-import Image from "next/image"
-import MobileFrame from "../mobile-frame"
-import { Button } from "../ui/button"
+import { ChevronRight, Download, Star } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { DownloadModal } from "../DownloadModal";
+import MobileFrame from "../mobile-frame";
+import { Button } from "../ui/button";
 
 export default function Hero() {
   return (
@@ -25,20 +27,28 @@ export default function Hero() {
           role="group"
           aria-label="Actions principales"
         >
-          <Button
-            className="bg-primary hover:bg-primary-dark text-lg h-12 px-6 cursor-pointer"
-            aria-label="Télécharger l'application"
-          >
-            <Download className="ml-2 h-5 w-5" aria-hidden="true" />
-            <span>Télécharger</span>
-          </Button>
+          <DownloadModal>
+            <Button
+              className="bg-primary hover:bg-primary-dark text-lg h-12 px-6 cursor-pointer"
+              aria-label="Télécharger l'application"
+            >
+              <Download className="ml-2 h-5 w-5" aria-hidden="true" />
+              <span>Télécharger pour Android</span>
+            </Button>
+          </DownloadModal>
           <Button
             variant="outline"
             className="border-primary text-primary hover:bg-primary-light/10 hover:text-primary-dark text-lg h-12 px-6 cursor-pointer"
             aria-label="En savoir plus sur l'application"
           >
-            <span>En savoir plus</span>
-            <ChevronRight className="ml-2 h-5 w-5" aria-hidden="true" />
+            <Link
+              href="https://mg.linkedin.com/in/raymond-dzery-hago-25013221b"
+              target="_blank"
+              className="flex items-center"
+            >
+              <span>En savoir plus</span>
+              <ChevronRight className="ml-2 h-5 w-5" aria-hidden="true" />
+            </Link>
           </Button>
         </div>
         <div
@@ -146,5 +156,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
