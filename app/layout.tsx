@@ -1,13 +1,14 @@
-import type { Metadata } from "next"
-import { Inter, Pacifico } from "next/font/google"
-import "./globals.css"
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Inter, Pacifico } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pacifico",
-})
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tsikonina.mg"),
@@ -85,18 +86,19 @@ export const metadata: Metadata = {
       "mg-MG": "https://mg.tsikonina.mg",
     },
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="fr" className={`${inter.className} ${pacifico.variable}`}>
       <body>
+        <Analytics />
         <main>{children}</main>
       </body>
     </html>
-  )
+  );
 }
