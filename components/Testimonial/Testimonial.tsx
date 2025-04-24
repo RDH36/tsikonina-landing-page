@@ -8,19 +8,19 @@ export default function Testimonial() {
       name: "Ravaka M.",
       text: "Tsikonina m'a aidé à renouer avec mon héritage malgache à travers la cuisine. Les recettes sont vraiment authentiques !",
       rating: 5,
-      image: "https://placehold.co/100x100",
+      image: "/images/ravaka.jpg",
     },
     {
       name: "Jean-Pierre R.",
       text: "Vivant à l'étranger, la cuisine malgache me manquait. Cette application apporte les saveurs de chez moi dans ma cuisine avec des instructions faciles.",
       rating: 5,
-      image: "https://placehold.co/100x100",
+      image: "/images/rakoto.jpg",
     },
     {
       name: "Sarah L.",
       text: "Je suis tombée amoureuse de Madagascar lors de mes voyages. Tsikonina m'aide à recréer ces saveurs merveilleuses chez moi.",
       rating: 4,
-      image: "https://placehold.co/100x100",
+      image: "/images/sarah.jpg",
     },
   ]
   return (

@@ -15,13 +15,13 @@ export default function PopularDishes() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-            <div className="h-48 overflow-hidden">
+            <div className="h-64 overflow-hidden">
               <Image
-                src="https://placehold.co/400x300"
+                src="/images/romazava.jpg"
                 alt="Romazava"
                 className="w-full h-full object-cover"
                 width={400}
-                height={300}
+                height={400}
               />
             </div>
             <div className="p-6">
@@ -38,13 +38,13 @@ export default function PopularDishes() {
           </div>
 
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-            <div className="h-48 overflow-hidden">
+            <div className="h-64 overflow-hidden">
               <Image
-                src="https://placehold.co/400x300"
+                src="/images/ravitoto.jpg"
                 alt="Ravitoto"
                 className="w-full h-full object-cover"
                 width={400}
-                height={300}
+                height={400}
               />
             </div>
             <div className="p-6">
@@ -61,13 +61,13 @@ export default function PopularDishes() {
           </div>
 
           <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-            <div className="h-48 overflow-hidden">
+            <div className="h-64 overflow-hidden">
               <Image
-                src="https://placehold.co/400x300"
+                src="/images/mofoGasy.jpg"
                 alt="Mofo Gasy"
                 className="w-full h-full object-cover"
                 width={400}
-                height={300}
+                height={400}
               />
             </div>
             <div className="p-6">
