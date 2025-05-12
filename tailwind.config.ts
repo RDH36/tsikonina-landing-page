@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import tailwindcssAnimate from "tailwindcss-animate"
 
 const config: Config = {
   content: [
@@ -82,14 +83,45 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "float-dish-left": {
+          "0%, 100%": { transform: "translateY(0) rotate(-5deg)" },
+          "50%": { transform: "translateY(-10px) rotate(-5deg)" },
+        },
+        "float-dish-right": {
+          "0%, 100%": { transform: "translateY(0) rotate(5deg)" },
+          "50%": { transform: "translateY(-10px) rotate(5deg)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeInRight: {
+          "0%": { opacity: "0", transform: "translateX(20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 6s ease-in-out infinite",
+        "float-dish-left": "float-dish-left 7s ease-in-out infinite",
+        "float-dish-right": "float-dish-right 8s ease-in-out infinite",
+        fadeIn: "fadeIn 0.6s ease-out forwards",
+        fadeInDelayed: "fadeIn 0.6s ease-out 0.3s forwards",
+        fadeInRight: "fadeInRight 0.6s ease-out forwards",
+        fadeInLeft: "fadeInLeft 0.6s ease-out forwards",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 }
 
 export default config
