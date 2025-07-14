@@ -1,54 +1,54 @@
-import { UtensilsCrossed } from "lucide-react"
-import Link from "next/link"
-import { useEffect, useState } from "react"
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     // Fonction pour le défilement fluide
     const handleSmoothScroll = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
+      const target = e.target as HTMLElement;
       if (
         target.tagName === "A" &&
         target.getAttribute("href")?.startsWith("#")
       ) {
-        e.preventDefault()
-        const id = target.getAttribute("href")
+        e.preventDefault();
+        const id = target.getAttribute("href");
         if (id) {
-          const element = document.querySelector(id)
+          const element = document.querySelector(id);
           if (element) {
             window.scrollTo({
               top: element.getBoundingClientRect().top + window.scrollY - 100,
               behavior: "smooth",
-            })
+            });
           }
         }
       }
-    }
+    };
 
     // Détecte le défilement pour appliquer l'effet de flou
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
     // Ajouter les écouteurs d'événements
-    document.addEventListener("click", handleSmoothScroll)
-    window.addEventListener("scroll", handleScroll)
+    document.addEventListener("click", handleSmoothScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Vérifier immédiatement si la page est déjà scrollée
-    handleScroll()
+    handleScroll();
 
     // Nettoyer les écouteurs d'événements
     return () => {
-      document.removeEventListener("click", handleSmoothScroll)
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      document.removeEventListener("click", handleSmoothScroll);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -58,7 +58,13 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center">
-          <UtensilsCrossed className="w-8 h-8 text-primary mr-2" />
+          <Image
+            src="/images/marmi.png"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="mr-1"
+          />
           <span className="text-3xl text-primary font-pacifico tracking-tighter">
             Tsikonina
           </span>
@@ -98,5 +104,5 @@ export default function Navigation() {
         </Link>
       </div>
     </nav>
-  )
+  );
 }

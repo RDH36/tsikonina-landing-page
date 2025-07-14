@@ -1,7 +1,7 @@
-import { Star } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import MobileFrame from "../mobile-frame"
+import { Star } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import MobileFrame from "../mobile-frame";
 
 export default function Hero() {
   return (
@@ -32,7 +32,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center py-20">
         <div className="md:w-1/2 mb-10 md:mb-0 z-10">
-          <span className="inline-block px-4 py-1 bg-amber-100 text-primary rounded-full mb-4 font-medium text-sm animate-pulse">
+          <span className="inline-block mt-5 px-4 py-1 bg-amber-100 text-primary rounded-full mb-4 font-medium text-sm animate-pulse">
             🍲 Nouvelle Application de Cuisine
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800">
@@ -246,5 +246,5 @@ export default function Hero() {
         </svg>
       </div>
     </section>
-  )
+  );
 }
