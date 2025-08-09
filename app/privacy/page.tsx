@@ -47,9 +47,9 @@ export default function PrivacyPage() {
         </h2>
         <p className="text-gray-700 mb-3">Nous utilisons les informations collectées pour :</p>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Fournir les fonctionnalités de l'application.</li>
-          <li>Personnaliser l'expérience utilisateur.</li>
-          <li>Améliorer l'application et ses fonctionnalités.</li>
+          <li>Fournir les fonctionnalités de l&#39;application.</li>
+          <li>Personnaliser l&#39;expérience utilisateur.</li>
+          <li>Améliorer l&#39;application et ses fonctionnalités.</li>
           <li>Envoyer des notifications et des mises à jour.</li>
         </ul>
 
