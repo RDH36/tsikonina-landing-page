@@ -1,30 +1,44 @@
-import React, { useState } from "react"
-import MobileFrame from "../mobile-frame"
-import Image from "next/image"
+import Image from "next/image";
+import { useState } from "react";
+import MobileFrame from "../mobile-frame";
 
 export default function ScreenShoot() {
-  const [activeScreenshot, setActiveScreenshot] = useState(0)
+  const [activeScreenshot, setActiveScreenshot] = useState(0);
 
   const screenshots = [
     {
-      title: "Découvrir la Cuisine Malgache",
+      title: "Écran d'accueil",
       description:
-        "Explorez des recettes authentiques de toutes les régions de Madagascar",
-      image: "https://placehold.co/400x600",
+        "Vue principale de l'application Tsikonina avec les catégories de recettes.",
+      image:
+        "/images/screenshoots/Screenshot_2025-08-09-11-53-03-663_com.rdh36.reciperecettemalagasy.jpg",
     },
     {
-      title: "Méthodes de Cuisson Traditionnelles",
+      title: "Parcourir les recettes",
       description:
-        "Apprenez les techniques authentiques avec des guides pas à pas",
-      image: "https://placehold.co/400x600",
+        "Parcourez les recettes et trouvez l'inspiration facilement.",
+      image:
+        "/images/screenshoots/Screenshot_2025-08-09-11-55-04-526_com.rdh36.reciperecettemalagasy.jpg",
     },
     {
-      title: "Contexte Culturel",
-      description:
-        "Comprenez l'histoire et la signification derrière chaque plat",
-      image: "https://placehold.co/400x600",
+      title: "Détail d'une recette",
+      description: "Informations complètes sur la recette avec visuels.",
+      image:
+        "/images/screenshoots/Screenshot_2025-08-09-11-53-16-876_com.rdh36.reciperecettemalagasy.jpg",
     },
-  ]
+    {
+      title: "Vos favoris",
+      description: "Liste des recettes que vous avez ajoutées.",
+      image:
+        "/images/screenshoots/Screenshot_2025-08-09-11-54-08-774_com.rdh36.reciperecettemalagasy.jpg",
+    },
+    {
+      title: "Communauté",
+      description: "Partagez vos expériences et commentez les articles.",
+      image:
+        "/images/screenshoots/Screenshot_2025-08-09-11-54-01-439_com.rdh36.reciperecettemalagasy.jpg",
+    },
+  ];
   return (
     <section
       id="screenshots"
@@ -44,7 +58,7 @@ export default function ScreenShoot() {
               <Image
                 src={
                   screenshots[activeScreenshot].image ||
-                  "https://placehold.co/400x600"
+                  "/images/screenshoots/Screenshot_2025-08-09-11-53-03-663_com.rdh36.reciperecettemalagasy.jpg"
                 }
                 alt={screenshots[activeScreenshot].title}
                 className="w-full h-full object-cover"
@@ -76,5 +90,5 @@ export default function ScreenShoot() {
         </div>
       </div>
     </section>
-  )
+  );
 }

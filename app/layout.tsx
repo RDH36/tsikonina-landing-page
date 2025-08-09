@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://tsikonina.mg",
+    url: "https://tsikonina.com",
     title: "Tsikonina - L'Application de Cuisine Malgache Authentique",
     description:
       "Découvrez la richesse de la cuisine malgache avec Tsikonina. Recettes authentiques, techniques traditionnelles et histoire culinaire de Madagascar.",
@@ -80,10 +80,10 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://tsikonina.mg",
+    canonical: "https://tsikonina.com",
     languages: {
-      "fr-FR": "https://tsikonina.mg",
-      "mg-MG": "https://mg.tsikonina.mg",
+      "fr-FR": "https://tsikonina.com",
+      "mg-MG": "https://tsikonina.com",
     },
   },
 };

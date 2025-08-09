@@ -1,6 +1,5 @@
-import { Star } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function Cta() {
   return (
@@ -18,8 +17,12 @@ export default function Cta() {
         className="absolute -bottom-10 -right-10 w-40 h-40 bg-white rounded-full opacity-10"
         aria-hidden="true"
       ></div>
+      <div
+        className="absolute inset-0 bg-black/50 pointer-events-none"
+        aria-hidden="true"
+      ></div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Prêt à explorer la cuisine malgache ?
@@ -140,6 +143,50 @@ export default function Cta() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    d="M16 11C18.2091 11 20 9.20914 20 7C20 4.79086 18.2091 3 16 3C13.7909 3 12 4.79086 12 7C12 9.20914 13.7909 11 16 11Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M8 13C10.2091 13 12 11.2091 12 9C12 6.79086 10.2091 5 8 5C5.79086 5 4 6.79086 4 9C4 11.2091 5.79086 13 8 13Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M2 21C2 18.2386 4.23858 16 7 16H9"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M14 21C14 17.6863 16.6863 15 20 15"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold mb-2">Communauté active</h3>
+              <p className="opacity-80 text-sm text-center">
+                Partagez vos expériences, échangez des conseils et commentez les recettes.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex flex-col items-center">
+              <div className="bg-white/20 rounded-full p-3 mb-4">
+                <svg
+                  className="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
                     d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
                     stroke="currentColor"
                     strokeWidth="1.5"
@@ -173,33 +220,11 @@ export default function Cta() {
                   />
                 ))}
               </div>
-              <span className="ml-2 text-sm font-medium">
-                4.8/5 •{" "}
-                <span className="font-normal">+5000 téléchargements</span>
-              </span>
+              <span className="ml-2 text-sm font-medium">4.8/5 • </span>
             </div>
 
             {/* Boutons de téléchargement */}
             <div className="flex flex-wrap justify-center gap-6">
-              <Link
-                href="/downloads/tsikonina.apk"
-                className="transition-transform hover:scale-105 duration-300 cursor-pointer"
-              >
-                <button className="bg-white text-primary py-3 px-8 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition-all duration-300 font-semibold shadow-lg cursor-pointer">
-                  <svg
-                    className="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17.5 3H6.5C5.4 3 4.5 3.9 4.5 5V19C4.5 20.1 5.4 21 6.5 21H17.5C18.6 21 19.5 20.1 19.5 19V5C19.5 3.9 18.6 3 17.5 3ZM12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5ZM17 15.5H7V5.5H17V15.5Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  Télécharger APK
-                </button>
-              </Link>
               <div className="relative group cursor-pointer">
                 <Image
                   src="/images/google-play-badge.png"
@@ -233,5 +258,5 @@ export default function Cta() {
         </div>
       </div>
     </section>
-  )
+  );
 }

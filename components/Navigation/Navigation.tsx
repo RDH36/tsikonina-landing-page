@@ -84,7 +84,7 @@ export default function Navigation() {
           </a>
         </div>
         <Link
-          href="/downloads/tsikonina.apk"
+          href="#"
           className="transition-transform hover:scale-105 duration-300"
         >
           <button className="bg-primary text-white py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-primary-dark transition-all duration-300 cursor-pointer">

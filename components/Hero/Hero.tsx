@@ -1,6 +1,5 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import MobileFrame from "../mobile-frame";
 
 export default function Hero() {
@@ -67,23 +66,6 @@ export default function Hero() {
           >
             {/* Store badges */}
             <div className="mt-4 flex flex-wrap gap-4">
-              <Link
-                href="/downloads/tsikonina.apk"
-                className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-              >
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.5 3H6.5C5.4 3 4.5 3.9 4.5 5V19C4.5 20.1 5.4 21 6.5 21H17.5C18.6 21 19.5 20.1 19.5 19V5C19.5 3.9 18.6 3 17.5 3ZM12 19.5C11.17 19.5 10.5 18.83 10.5 18C10.5 17.17 11.17 16.5 12 16.5C12.83 16.5 13.5 17.17 13.5 18C13.5 18.83 12.83 19.5 12 19.5ZM17 15.5H7V5.5H17V15.5Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                Télécharger APK
-              </Link>
               <div className="relative group cursor-pointer">
                 <Image
                   src="/images/google-play-badge.png"
@@ -218,8 +200,8 @@ export default function Hero() {
             >
               <MobileFrame>
                 <Image
-                  src="/images/bg.png"
-                  alt="Interface de l'application Tsikonina montrant une recette de cuisine malgache"
+                  src="/images/screenshoots/Screenshot_2025-08-09-11-53-03-663_com.rdh36.reciperecettemalagasy.jpg"
+                  alt="Capture d'écran de l'application Tsikonina"
                   className="w-full h-full object-cover"
                   width={400}
                   height={600}

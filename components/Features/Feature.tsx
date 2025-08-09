@@ -1,42 +1,40 @@
-import React from "react"
-
 const features = [
   {
-    title: "Recettes Authentiques",
+    title: "Espace communautaire",
     description:
-      "Découvrez des recettes malgaches traditionnelles transmises de génération en génération, du Romazava au Ravitoto et Mofo Gasy.",
-    icon: "🍲",
+      "Partagez vos expériences culinaires malgaches, commentez les articles et découvrez les idées de la communauté.",
+    icon: "👥",
   },
   {
-    title: "Variétés Régionales",
+    title: "Étapes guidées",
     description:
-      "Explorez des plats de différentes régions de Madagascar, chacun avec ses saveurs et techniques uniques.",
+      "Suivez des instructions claires, étape par étape, avec astuces et temps de préparation.",
+    icon: "👩‍🍳",
+  },
+  {
+    title: "Favoris",
+    description:
+      "Enregistrez vos recettes préférées pour y revenir en un clic, même en cuisine.",
+    icon: "❤️",
+  },
+  {
+    title: "Découvertes régionales",
+    description:
+      "Explorez les spécialités des différentes régions pour un voyage culinaire authentique.",
     icon: "🗺️",
   },
-  {
-    title: "Contexte Culturel",
-    description:
-      "Découvrez la signification culturelle et l'histoire derrière chaque plat traditionnel malgache.",
-    icon: "📚",
-  },
-  {
-    title: "Ingrédients Locaux",
-    description:
-      "Découvrez les ingrédients traditionnels malgaches et apprenez à les utiliser dans votre cuisine.",
-    icon: "🌿",
-  },
-]
+];
 
 export default function Feature() {
   return (
     <section id="features" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
-          Explorez l&apos;Héritage Culinaire de Madagascar
+          Fonctionnalités de l&apos;application Tsikonina
         </h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-          Tsikonina apporte les saveurs authentiques de Madagascar dans votre
-          cuisine avec ces fonctionnalités uniques
+          Tout ce qu&apos;il faut pour cuisiner malgache au quotidien : trouvez,
+          suivez, enregistrez et découvrez des recettes authentiques.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -55,5 +53,5 @@ export default function Feature() {
         </div>
       </div>
     </section>
-  )
+  );
 }

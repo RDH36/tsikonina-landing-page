@@ -3,14 +3,14 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 export default function FAQ() {
   const faqs = [
     {
       question: "Comment installer l'application Tsikonina ?",
       answer:
-        "Téléchargez simplement le fichier APK depuis notre site et installez-le sur votre appareil Android. Vous pouvez également attendre nos versions à venir sur Google Play et App Store.",
+        "L’application sera bientôt disponible sur Google Play et App Store. Restez informé ici : les boutons deviendront actifs dès la mise en ligne.",
     },
     {
       question: "Quelles recettes sont disponibles dans l'application ?",
@@ -25,12 +25,12 @@ export default function FAQ() {
     {
       question: "Comment puis-je contribuer à l'application ?",
       answer:
-        "Actuellement, les utilisateurs ne peuvent pas ajouter leurs propres recettes. Cependant, vous pouvez contribuer en notant les recettes existantes et en laissant des commentaires pour partager vos astuces ou suggestions. Vos retours nous aident à améliorer l'application et à enrichir l'expérience de tous les utilisateurs.",
+        "Participez via l’espace communautaire : partagez vos expériences, échangez des conseils et commentez les articles. L’ajout de recettes et la notation arriveront prochainement.",
     },
     {
       question: "Y a-t-il des options de recherche avancée ?",
       answer:
-        "Oui, l'application dispose de filtres permettant de rechercher des recettes par ingrédients, temps de préparation, niveau de difficulté et région d'origine à Madagascar.",
+        "La recherche avancée arrive bientôt. Pour l’instant, parcourez par catégories et régions et utilisez les suggestions pour trouver vos recettes.",
     },
     {
       question: "Les recettes sont-elles adaptées aux débutants ?",
@@ -40,9 +40,9 @@ export default function FAQ() {
     {
       question: "Puis-je noter et partager mes recettes préférées ?",
       answer:
-        "Cette fonctionnalité est en cours de développement ! Vous pourrez bientôt attribuer une note aux recettes que vous avez essayées et partager vos favoris avec la communauté. Nous prévoyons également d'introduire un système de commentaires pour échanger des astuces et variantes.",
+        "Bientôt disponible : vous pourrez attribuer une note et partager vos favoris. Les commentaires sont déjà possibles via l’espace communautaire.",
     },
-  ]
+  ];
 
   return (
     <section id="faq" className="py-16 md:py-24 bg-white">
@@ -81,5 +81,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }
