@@ -3,9 +3,8 @@
 import Cta from "@/components/Cta/Cta";
 import FAQ from "@/components/FAQ/FAQ";
 import Feature from "@/components/Features/Feature";
-import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
-import Navigation from "@/components/Navigation/Navigation";
+import Newsletter from "@/components/Newsletter/Newsletter";
 import PopularDishes from "@/components/Popular/PopularDishes";
 import ScreenShoot from "@/components/Screenshoots/ScreenShoot";
 import Testimonial from "@/components/Testimonial/Testimonial";
@@ -27,16 +26,15 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen">
-      <Navigation />
       <Hero />
       <div className="bg-white">
         <Feature />
         <PopularDishes />
         <ScreenShoot />
         <Testimonial />
+        <Newsletter />
         <Cta />
         <FAQ />
-        <Footer />
       </div>
       {showScrollTop && (
         <Button

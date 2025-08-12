@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Users, Clock, Heart } from "lucide-react";
 import Image from "next/image";
 import MobileFrame from "../mobile-frame";
 
@@ -35,7 +35,7 @@ export default function Hero() {
             🍲 Nouvelle Application de Cuisine
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800">
-            La Cuisine{" "}
+            La cuisine{" "}
             <span className="text-primary font-pacifico relative">
               Malagasy
               <svg
@@ -52,7 +52,7 @@ export default function Hero() {
                 />
               </svg>
             </span>{" "}
-            Authentique dans Votre Poche
+            authentique dans votre poche
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Découvrez les saveurs riches et les traditions de Madagascar avec
@@ -106,25 +106,22 @@ export default function Hero() {
           <div
             className="flex items-center bg-white/70 backdrop-blur-sm p-3 rounded-lg shadow-sm w-fit"
             role="complementary"
-            aria-label="Évaluation des utilisateurs"
+            aria-label="Intérêt de la communauté"
           >
-            <div className="flex" aria-label="Note de 4.8 sur 5 étoiles">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star
-                  key={star}
-                  className={`h-5 w-5 ${
-                    star <= 4
-                      ? "fill-amber-400 text-amber-400"
-                      : "fill-gray-200 text-gray-200"
-                  }`}
-                  aria-hidden="true"
-                />
-              ))}
+            <div className="flex items-center space-x-3">
+              <div className="flex items-center">
+                <Users className="h-4 w-4 text-blue-500 mr-1" />
+                <span className="text-sm font-medium text-gray-700">2k+</span>
+              </div>
+              <div className="flex items-center">
+                <Heart className="h-4 w-4 text-red-500 mr-1" />
+                <span className="text-sm font-medium text-gray-700">Intéressés</span>
+              </div>
+              <div className="flex items-center">
+                <Clock className="h-4 w-4 text-amber-500 mr-1" />
+                <span className="text-sm font-medium text-gray-700">Bientôt</span>
+              </div>
             </div>
-            <span className="ml-2 text-gray-600">
-              <span className="font-bold">4.8</span> •{" "}
-              <span aria-label="Plus de 5000 avis">5k+ Avis</span>
-            </span>
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center z-10" role="presentation">

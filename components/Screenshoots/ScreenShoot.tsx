@@ -46,7 +46,7 @@ export default function ScreenShoot() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
-          Aperçu de l&apos;Application
+          Aperçu de l&apos;application
         </h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
           Découvrez comment Tsikonina donne vie à la cuisine malgache

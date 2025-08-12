@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Users, Clock, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export default function Cta() {
@@ -208,19 +208,16 @@ export default function Cta() {
           {/* Avis et badges */}
           <div className="flex flex-col items-center">
             <div className="flex items-center bg-white/10 backdrop-blur-sm p-3 rounded-lg mb-8">
-              <div className="flex" aria-label="Étoiles">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star
-                    key={star}
-                    className={`h-5 w-5 ${
-                      star <= 4
-                        ? "fill-amber-300 text-amber-300"
-                        : "fill-white/30 text-white/30"
-                    }`}
-                  />
-                ))}
+              <div className="flex items-center space-x-4">
+                <div className="flex items-center">
+                  <Users className="h-4 w-4 text-white mr-1" />
+                  <span className="text-sm font-medium">2k+ Intéressés</span>
+                </div>
+                <div className="flex items-center">
+                  <Sparkles className="h-4 w-4 text-amber-300 mr-1" />
+                  <span className="text-sm font-medium">Bientôt disponible</span>
+                </div>
               </div>
-              <span className="ml-2 text-sm font-medium">4.8/5 • </span>
             </div>
 
             {/* Boutons de téléchargement */}

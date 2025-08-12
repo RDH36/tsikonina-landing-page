@@ -1,9 +1,15 @@
+import Footer from "@/components/Footer/Footer";
+import Navigation from "@/components/Navigation/Navigation";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter, Pacifico } from "next/font/google";
+import { Pacifico, Roboto } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
@@ -11,9 +17,9 @@ const pacifico = Pacifico({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tsikonina.mg"),
+  metadataBase: new URL("https://tsikonina.com"),
   title: {
-    default: "Tsikonina - L'Application de Cuisine Malgache Authentique",
+    default: "Tsikonina - L'Application de cuisine malgache authentique",
     template: "%s | Tsikonina",
   },
   description:
@@ -41,7 +47,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://tsikonina.com",
-    title: "Tsikonina - L'Application de Cuisine Malgache Authentique",
+    title: "Tsikonina - L'Application de cuisine malgache authentique",
     description:
       "Découvrez la richesse de la cuisine malgache avec Tsikonina. Recettes authentiques, techniques traditionnelles et histoire culinaire de Madagascar.",
     siteName: "Tsikonina",
@@ -50,13 +56,13 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tsikonina - Application de Cuisine Malgache",
+        alt: "Tsikonina - Application de cuisine malgache authentique",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tsikonina - L'Application de Cuisine Malgache Authentique",
+    title: "Tsikonina - L'Application de cuisine malgache authentique",
     description:
       "Découvrez la richesse de la cuisine malgache avec Tsikonina. Recettes authentiques et traditions culinaires de Madagascar.",
     images: ["/images/twitter-image.jpg"],
@@ -74,9 +80,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "favicon.ico",
   },
   manifest: "/site.webmanifest",
   alternates: {
@@ -94,10 +98,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.className} ${pacifico.variable}`}>
+    <html
+      lang="fr"
+      className={`${roboto.className} ${roboto.variable} ${pacifico.variable}`}
+    >
       <body>
         <Analytics />
-        <main>{children}</main>
+        <main>
+          <Navigation />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -57,7 +58,7 @@ export default function Navigation() {
       }`}
     >
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/marmi.png"
             alt="Logo"
@@ -68,20 +69,23 @@ export default function Navigation() {
           <span className="text-3xl text-primary font-pacifico tracking-tighter">
             Tsikonina
           </span>
-        </div>
+        </Link>
         <div className="hidden md:flex gap-6">
-          <a href="#features" className="text-gray-600 hover:text-primary">
+          <Link href="/#features" className="text-gray-600 hover:text-primary">
             Fonctionnalités
-          </a>
-          <a href="#screenshots" className="text-gray-600 hover:text-primary">
+          </Link>
+          <Link
+            href="/#screenshots"
+            className="text-gray-600 hover:text-primary"
+          >
             Aperçu
-          </a>
-          <a href="#testimonials" className="text-gray-600 hover:text-primary">
+          </Link>
+          <Link
+            href="/#testimonials"
+            className="text-gray-600 hover:text-primary"
+          >
             Témoignages
-          </a>
-          <a href="#faq" className="text-gray-600 hover:text-primary">
-            FAQ
-          </a>
+          </Link>
         </div>
         <Link
           href="#"

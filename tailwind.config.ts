@@ -19,6 +19,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-roboto)", "Roboto", "sans-serif"],
+        pacifico: ["var(--font-pacifico)", "Pacifico", "cursive"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
