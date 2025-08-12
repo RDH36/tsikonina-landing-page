@@ -10,8 +10,7 @@ import {
   FileText,
   Video,
   Clock,
-  CheckCircle,
-  AlertTriangle
+  CheckCircle
 } from "lucide-react";
 
 export default function SupportPage() {
@@ -39,32 +38,32 @@ export default function SupportPage() {
     {
       category: "account",
       question: "Comment créer un compte Tsikonina ?",
-      answer: "Téléchargez l'application depuis l'App Store ou Google Play, puis suivez les instructions d'inscription. Vous pouvez vous inscrire avec votre email ou vos comptes sociaux.",
+      answer: "Téléchargez l&apos;application depuis l&apos;App Store ou Google Play, puis suivez les instructions d&apos;inscription. Vous pouvez vous inscrire avec votre email ou vos comptes sociaux.",
     },
     {
       category: "account",
-      question: "J'ai oublié mon mot de passe, que faire ?",
-      answer: "Utilisez l'option 'Mot de passe oublié' sur l'écran de connexion. Vous recevrez un email avec les instructions pour réinitialiser votre mot de passe.",
+      question: "J&apos;ai oublié mon mot de passe, que faire ?",
+      answer: "Utilisez l&apos;option &apos;Mot de passe oublié&apos; sur l&apos;écran de connexion. Vous recevrez un email avec les instructions pour réinitialiser votre mot de passe.",
     },
     {
       category: "recipes",
       question: "Comment ajouter mes propres recettes ?",
-      answer: "Dans l'application, allez dans 'Mes Recettes' puis appuyez sur le bouton '+'. Vous pouvez ajouter des photos, ingrédients et étapes de préparation.",
+      answer: "Dans l&apos;application, allez dans &apos;Mes Recettes&apos; puis appuyez sur le bouton &apos;+&apos;. Vous pouvez ajouter des photos, ingrédients et étapes de préparation.",
     },
     {
       category: "technical",
-      question: "L'application se ferme de manière inattendue",
-      answer: "Assurez-vous d'avoir la dernière version de l'application. Si le problème persiste, redémarrez votre appareil et contactez notre support technique.",
+      question: "L&apos;application se ferme de manière inattendue",
+      answer: "Assurez-vous d&apos;avoir la dernière version de l&apos;application. Si le problème persiste, redémarrez votre appareil et contactez notre support technique.",
     },
     {
       category: "billing",
       question: "Comment annuler mon abonnement premium ?",
-      answer: "Vous pouvez annuler votre abonnement dans les paramètres de votre compte, section 'Abonnement'. L'annulation prendra effet à la fin de la période de facturation actuelle.",
+      answer: "Vous pouvez annuler votre abonnement dans les paramètres de votre compte, section &apos;Abonnement&apos;. L&apos;annulation prendra effet à la fin de la période de facturation actuelle.",
     },
     {
       category: "features",
       question: "Comment utiliser la fonction de planification de repas ?",
-      answer: "Allez dans l'onglet 'Planificateur', sélectionnez les dates et choisissez vos recettes. L'application générera automatiquement votre liste de courses.",
+      answer: "Allez dans l&apos;onglet &apos;Planificateur&apos;, sélectionnez les dates et choisissez vos recettes. L&apos;application générera automatiquement votre liste de courses.",
     },
   ];
 
@@ -98,7 +97,7 @@ export default function SupportPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Centre d'aide Tsikonina
+              Centre d&apos;aide Tsikonina
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8">
               Trouvez rapidement les réponses à vos questions ou contactez notre équipe de support
@@ -199,7 +198,7 @@ export default function SupportPage() {
                 <div className="space-y-3">
                   <a href="#" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
                     <FileText className="w-5 h-5 mr-3" />
-                    Guide d'utilisation
+                    Guide d&apos;utilisation
                   </a>
                   <a href="#" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
                     <Video className="w-5 h-5 mr-3" />
@@ -249,7 +248,7 @@ export default function SupportPage() {
                 Créer un ticket de support
               </h2>
               <p className="text-gray-600 mb-6">
-                Vous n'avez pas trouvé la réponse à votre question ? Créez un ticket de support et notre équipe vous aidera.
+                Vous n&apos;avez pas trouvé la réponse à votre question ? Créez un ticket de support et notre équipe vous aidera.
               </p>
 
               <form onSubmit={handleTicketSubmit} className="space-y-6">
@@ -348,7 +347,7 @@ export default function SupportPage() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                    placeholder="Décrivez votre problème en détail. Incluez les étapes pour reproduire le problème, les messages d'erreur, etc."
+                    placeholder="Décrivez votre problème en détail. Incluez les étapes pour reproduire le problème, les messages d&apos;erreur, etc."
                   />
                 </div>
 
@@ -421,7 +420,7 @@ export default function SupportPage() {
                     <span className="text-sm text-yellow-700">Maintenance</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">Maintenance programmée jusqu'à 16h</p>
+                <p className="text-sm text-gray-600">Maintenance programmée jusqu&apos;à 16h</p>
               </div>
             </div>
           </div>

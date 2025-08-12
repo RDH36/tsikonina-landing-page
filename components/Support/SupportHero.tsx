@@ -1,5 +1,4 @@
 import { ChevronRight, Search } from "lucide-react";
-import { useState } from "react";
 
 interface SupportHeroProps {
   searchQuery: string;
@@ -14,7 +13,7 @@ export default function SupportHero({ searchQuery, setSearchQuery }: SupportHero
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Centre d'aide Tsikonina
+              Centre d&apos;aide Tsikonina
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8">
               Trouvez rapidement les réponses à vos questions ou contactez notre équipe de support

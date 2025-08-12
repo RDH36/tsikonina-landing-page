@@ -29,7 +29,7 @@ export default function Newsletter() {
         "Merci ! Vous serez notifié dès le lancement de l'application."
       );
       setEmail("");
-    } catch (error) {
+    } catch {
       setStatus("error");
       setMessage("Une erreur s'est produite. Veuillez réessayer.");
     }

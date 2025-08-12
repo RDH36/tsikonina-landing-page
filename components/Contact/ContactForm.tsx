@@ -34,7 +34,7 @@ export default function ContactForm() {
       console.log("Form data:", data);
       setSubmitStatus("success");
       reset();
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -91,7 +91,7 @@ export default function ContactForm() {
             </div>
             <div className="ml-3">
               <p className="text-sm text-red-800">
-                Une erreur s'est produite lors de l'envoi de votre message.
+                Une erreur s&apos;est produite lors de l&apos;envoi de votre message.
                 Veuillez réessayer.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function ContactForm() {
               type="email"
               id="email"
               {...register("email", {
-                required: "L'email est requis",
+                required: "L&apos;email est requis",
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "Adresse email invalide",
@@ -260,7 +260,7 @@ export default function ContactForm() {
             className="mt-1 h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
           />
           <label htmlFor="privacy" className="ml-3 text-sm text-gray-600">
-            J'accepte que mes données soient utilisées pour traiter ma demande
+            J&apos;accepte que mes données soient utilisées pour traiter ma demande
             conformément à notre{" "}
             <a href="/privacy" className="text-primary hover:underline">
               politique de confidentialité

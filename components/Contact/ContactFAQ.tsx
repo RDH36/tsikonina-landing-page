@@ -22,7 +22,7 @@ export default function ContactFAQ() {
               </h3>
               <p className="text-gray-600">
                 Oui, notre équipe technique est disponible du lundi au vendredi
-                de 8h à 18h pour vous aider avec l'application.
+                de 8h à 18h pour vous aider avec l&apos;application.
               </p>
             </div>
           </div>

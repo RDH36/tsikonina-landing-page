@@ -1,4 +1,4 @@
-import { Users, Clock, Sparkles } from "lucide-react";
+import { Users, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export default function Cta() {
