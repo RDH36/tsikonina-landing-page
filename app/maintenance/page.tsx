@@ -1,4 +1,5 @@
 import { AlertTriangle, Clock, Mail, Wrench } from "lucide-react";
+import Link from "next/link";
 
 export default function MaintenancePage() {
   return (
@@ -26,7 +27,7 @@ export default function MaintenancePage() {
           </div>
           
           <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-            Nous travaillons actuellement sur l'application <strong>Tsikonina</strong>, 
+            Nous travaillons actuellement sur l&apos;application <strong>Tsikonina</strong>, 
             votre future compagne pour découvrir la richesse de la cuisine malgache authentique.
           </p>
 
@@ -55,12 +56,12 @@ export default function MaintenancePage() {
 
         {/* CTA */}
         <div className="space-y-4">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-3 rounded-full font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Découvrir Tsikonina
-          </a>
+          </Link>
           
           <p className="text-gray-500 text-sm">
             Ou contactez-nous à{" "}
