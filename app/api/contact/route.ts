@@ -54,13 +54,17 @@ export async function POST(request: NextRequest) {
 
     // Envoyer l'email de confirmation au client
     try {
-      await resend.emails.send({
+      if (!resend) {
+        console.warn('Resend non initialisé - email de confirmation non envoyé');
+      } else {
+        await resend.emails.send({
         from: "Tsikonina <noreply@email.tsikonina.com>",
         to: [email],
         subject: emailTemplates.contactConfirmation.subject,
         html: emailTemplates.contactConfirmation.html(name),
         text: `Bonjour ${name},\n\nMerci de nous avoir contactés ! Nous avons bien reçu votre message et notre équipe vous répondra dans les plus brefs délais.\n\nEn attendant, n'hésitez pas à découvrir notre blog ou à vous inscrire à notre newsletter.\n\nL'équipe Tsikonina 🍽️`,
-      });
+        });
+      }
     } catch (emailError) {
       console.error(
         "Erreur lors de l'envoi de l'email de confirmation:",
@@ -70,8 +74,11 @@ export async function POST(request: NextRequest) {
 
     // Envoyer une notification à l'équipe
     try {
-      const contactEmail = process.env.CONTACT_EMAIL || "contact@tsikonina.com";
-      await resend.emails.send({
+      if (!resend) {
+        console.warn('Resend non initialisé - notification équipe non envoyée');
+      } else {
+        const contactEmail = process.env.CONTACT_EMAIL || "contact@tsikonina.com";
+        await resend.emails.send({
         from: "Tsikonina <noreply@email.tsikonina.com>",
         to: [contactEmail],
         subject: emailTemplates.newContactNotification.subject,
@@ -82,7 +89,8 @@ export async function POST(request: NextRequest) {
           message
         ),
         replyTo: email,
-      });
+        });
+      }
     } catch (emailError) {
       console.error("Erreur lors de l'envoi de la notification:", emailError);
     }

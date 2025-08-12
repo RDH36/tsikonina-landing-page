@@ -1,6 +1,16 @@
 import { Resend } from "resend";
 
-export const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialisation conditionnelle de Resend pour éviter les erreurs lors du build
+const getResendInstance = () => {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.warn('RESEND_API_KEY non définie - les emails ne seront pas envoyés');
+    return null;
+  }
+  return new Resend(apiKey);
+};
+
+export const resend = getResendInstance();
 
 // Templates d'emails
 export const emailTemplates = {

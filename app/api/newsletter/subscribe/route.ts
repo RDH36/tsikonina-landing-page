@@ -74,7 +74,10 @@ export async function POST(request: NextRequest) {
 
     // Envoyer l'email de bienvenue
     try {
-      await resend.emails.send({
+      if (!resend) {
+        console.warn('Resend non initialisé - email de bienvenue non envoyé');
+      } else {
+        await resend.emails.send({
         from: "Tsikonina <noreply@email.tsikonina.com>",
         to: [email],
         subject: emailTemplates.welcomeNewsletter.subject,
@@ -83,7 +86,8 @@ export async function POST(request: NextRequest) {
         headers: {
           'X-Entity-Ref-ID': 'newsletter-welcome',
         },
-      });
+        });
+      }
     } catch (emailError) {
       console.error("Erreur lors de l'envoi de l'email:", emailError);
       // On continue même si l'email échoue
