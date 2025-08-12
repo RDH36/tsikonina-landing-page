@@ -20,7 +20,7 @@ const pacifico = Pacifico({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tsikonina.com"),
   title: {
-    default: "Tsikonina - L'Application de cuisine malgache authentique",
+    default: "Tsikonina - L'application de cuisine malgache authentique",
     template: "%s | Tsikonina",
   },
   description:
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://tsikonina.com",
-    title: "Tsikonina - L'Application de cuisine malgache authentique",
+    title: "Tsikonina - L'application de cuisine malgache authentique",
     description:
       "Découvrez la richesse de la cuisine malgache avec Tsikonina. Recettes authentiques, techniques traditionnelles et histoire culinaire de Madagascar.",
     siteName: "Tsikonina",
@@ -57,13 +57,13 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tsikonina - Application de cuisine malgache authentique",
+        alt: "Tsikonina - L'application de cuisine malgache authentique",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tsikonina - L'Application de cuisine malgache authentique",
+    title: "Tsikonina - L'application de cuisine malgache authentique",
     description:
       "Découvrez la richesse de la cuisine malgache avec Tsikonina. Recettes authentiques et traditions culinaires de Madagascar.",
     images: ["/images/twitter-image.jpg"],
@@ -109,8 +109,14 @@ export default function RootLayout({
       className={`${roboto.className} ${roboto.variable} ${pacifico.variable}`}
     >
       <head>
-        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
-        <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+        <meta
+          name="robots"
+          content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache"
+        />
+        <meta
+          name="googlebot"
+          content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache"
+        />
       </head>
       <body>
         <Analytics />
