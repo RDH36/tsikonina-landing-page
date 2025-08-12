@@ -29,12 +29,29 @@ export default function ContactForm() {
     setSubmitStatus("idle");
 
     try {
-      // Simulation d'envoi de formulaire
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log("Form data:", data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Une erreur s\'est produite');
+      }
+
       setSubmitStatus("success");
       reset();
-    } catch {
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);

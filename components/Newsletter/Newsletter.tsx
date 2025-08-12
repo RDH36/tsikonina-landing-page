@@ -21,17 +21,27 @@ export default function Newsletter() {
 
     setStatus("loading");
 
-    // Simuler un appel API
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch('/api/newsletter/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Une erreur s\'est produite');
+      }
+
       setStatus("success");
-      setMessage(
-        "Merci ! Vous serez notifié dès le lancement de l'application."
-      );
+      setMessage(data.message || "Merci ! Vous serez notifié dès le lancement de l'application.");
       setEmail("");
-    } catch {
+    } catch (error) {
       setStatus("error");
-      setMessage("Une erreur s'est produite. Veuillez réessayer.");
+      setMessage(error instanceof Error ? error.message : "Une erreur s'est produite. Veuillez réessayer.");
     }
   };
 

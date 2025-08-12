@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Navigation from "@/components/Navigation/Navigation";
+import PreprodBanner from "@/components/PreprodBanner/PreprodBanner";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Pacifico, Roboto } from "next/font/google";
@@ -69,14 +70,19 @@ export const metadata: Metadata = {
     creator: "@tsikonina",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    nocache: true,
     googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      index: false,
+      follow: false,
+      noarchive: true,
+      nosnippet: true,
+      noimageindex: true,
+      nocache: true,
     },
   },
   icons: {
@@ -102,8 +108,13 @@ export default function RootLayout({
       lang="fr"
       className={`${roboto.className} ${roboto.variable} ${pacifico.variable}`}
     >
+      <head>
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+        <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+      </head>
       <body>
         <Analytics />
+        <PreprodBanner />
         <main>
           <Navigation />
           {children}

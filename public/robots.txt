@@ -1,0 +1,30 @@
+# Robots.txt pour la pré-production
+# Site en développement - Ne pas indexer
+
+User-agent: *
+Disallow: /
+
+# Empêcher spécifiquement les principaux moteurs de recherche
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+# Pas de sitemap pour le moment
+# Sitemap:
