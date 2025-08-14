@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité | Tsikonina",
+  title: "Politique de confidentialité",
   description:
-    "Politique de confidentialité de Tsikonina : informations collectées, utilisation, partage, sécurité, droits des utilisateurs et contact.",
+    "Politique de confidentialité de Tsikonina : identité, conditions d’utilisation, informations, propriété intellectuelle, liens, confidentialité et contact.",
   alternates: {
     canonical: "https://tsikonina.com/privacy",
   },
@@ -55,86 +55,95 @@ export default function PrivacyPage() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Informations collectées
+          Identité
         </h2>
-        <p className="text-gray-700 mb-3">
-          Nous collectons les informations suivantes :
-        </p>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>
-            <span className="font-medium">Informations de compte</span> : nom,
-            adresse e-mail, mot de passe.
+            <span className="font-medium">Nom du site web/application</span> :
+            Tsikonina
           </li>
           <li>
-            <span className="font-medium">Informations de recette</span> :
-            recettes favorites, recettes enregistrées.
+            <span className="font-medium">Adresse</span> :{" "}
+            <a
+              href="https://tsikonina.com"
+              className="text-primary hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.tsikonina.com
+            </a>
           </li>
           <li>
-            <span className="font-medium">Informations de navigation</span> :
-            historique de navigation, recherche.
+            <span className="font-medium">Hébergement</span> : Vercel Inc, 650
+            California St, San Francisco, CA 94108, US
           </li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Utilisation des informations
-        </h2>
-        <p className="text-gray-700 mb-3">
-          Nous utilisons les informations collectées pour :
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Fournir les fonctionnalités de l&#39;application.</li>
-          <li>Personnaliser l&#39;expérience utilisateur.</li>
-          <li>Améliorer l&#39;application et ses fonctionnalités.</li>
-          <li>Envoyer des notifications et des mises à jour.</li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Partage des informations
-        </h2>
-        <p className="text-gray-700 mb-3">
-          Nous partageons les informations collectées avec :
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>
-            Les services de paiement pour traiter les transactions, si cela est
-            nécessaire.
-          </li>
-          <li>
-            Les autorités compétentes en cas de nécessité, conformément à la
-            loi.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Sécurité des données
+          Conditions d’utilisation
         </h2>
         <p className="text-gray-700 mb-6">
-          Nous prenons des mesures raisonnables pour protéger les données
-          personnelles contre les accès non autorisés, la modification ou la
-          destruction.
+          En accédant et en utilisant ce site, vous acceptez pleinement les
+          conditions générales d’utilisation qui sont décrites ci-dessous. Ces
+          conditions peuvent être mises à jour ou complétées à tout moment, et
+          il est de votre responsabilité de les consulter régulièrement pour
+          être informé des éventuelles modifications.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Droits des utilisateurs
-        </h2>
-        <p className="text-gray-700 mb-3">Les utilisateurs ont le droit de :</p>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Accéder à leurs données personnelles.</li>
-          <li>Modifier leurs données personnelles.</li>
-          <li>Supprimer leurs données personnelles.</li>
-          <li>
-            Refuser la collecte de données personnelles, dans les limites
-            prévues par la loi.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
-          Modification de la politique de confidentialité
+          Informations
         </h2>
         <p className="text-gray-700 mb-6">
-          Nous pouvons modifier cette politique de confidentialité à tout
-          moment. Les modifications seront publiées sur notre site web et seront
-          effectives immédiatement.
+          Les informations et documents disponibles sur ce site sont fournis
+          uniquement à des fins d&apos;information. Nous ne garantissons pas
+          leur exhaustivité et nous déclinons toute responsabilité pour les
+          dommages directs ou indirects qui pourraient résulter de l&apos;accès
+          ou de l&apos;utilisation de ces informations.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
+          Propriété intellectuelle
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Tous les contenus du site, y compris les textes, sont protégés par des
+          droits de propriété intellectuelle et restent la propriété exclusive
+          de leurs auteurs respectifs, sauf mention contraire. Toute
+          utilisation, reproduction, modification ou publication de ces éléments
+          sans autorisation écrite préalable de l’auteur est strictement
+          interdite et peut constituer une contrefaçon.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
+          Liens
+        </h2>
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+          Liens sortants
+        </h3>
+        <p className="text-gray-700 mb-4">
+          Nous ne sommes pas responsables des contenus des sites tiers auxquels
+          nos liens hypertextes donnent accès.
+        </p>
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+          Liens entrants
+        </h3>
+        <p className="text-gray-700 mb-6">
+          Les liens vers notre site sont autorisés à condition d&apos;ouvrir une
+          nouvelle fenêtre et d&apos;être présentés de manière claire et
+          transparente pour éviter toute confusion. Nous nous réservons le droit
+          de demander la suppression de tout lien qui ne respecte pas ces
+          conditions.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
+          Confidentialité
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Vous avez le droit d&apos;accéder à vos données personnelles, de les
+          corriger et de vous opposer à leur traitement. Les informations que
+          nous collectons sont utilisées pour fournir les fonctionnalités de
+          l&apos;application, personnaliser votre expérience utilisateur,
+          améliorer l&apos;application et ses fonctionnalités, ainsi que pour
+          vous envoyer des notifications et des mises à jour pertinentes.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-800">
@@ -142,13 +151,13 @@ export default function PrivacyPage() {
         </h2>
         <p className="text-gray-700 mb-6">
           Si vous avez des questions ou des préoccupations concernant cette
-          politique de confidentialité, veuillez nous contacter à{" "}
-          <a
-            href="mailto:mihajasoa308@gmail.com"
+          politique de confidentialité, veuillez nous contacter{" "}
+          <Link
+            href="www.tsikonina.com/contact"
             className="text-primary hover:underline"
           >
-            mihajasoa308@gmail.com
-          </a>
+            www.tsikonina.com/contact
+          </Link>
           .
         </p>
 

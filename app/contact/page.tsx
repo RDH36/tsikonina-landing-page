@@ -2,6 +2,15 @@ import ContactFAQ from "@/components/Contact/ContactFAQ";
 import ContactForm from "@/components/Contact/ContactForm";
 import ContactHero from "@/components/Contact/ContactHero";
 import ContactInfo from "@/components/Contact/ContactInfo";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contactez-nous pour toute question sur Tsikonina.",
+  alternates: {
+    canonical: "https://tsikonina.com/contact",
+  },
+};
 
 export default function ContactPage() {
   return (

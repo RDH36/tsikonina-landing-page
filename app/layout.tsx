@@ -70,19 +70,11 @@ export const metadata: Metadata = {
     creator: "@tsikonina",
   },
   robots: {
-    index: false,
-    follow: false,
-    noarchive: true,
-    nosnippet: true,
-    noimageindex: true,
-    nocache: true,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noarchive: true,
-      nosnippet: true,
-      noimageindex: true,
-      nocache: true,
+      index: true,
+      follow: true,
     },
   },
   icons: {
@@ -109,14 +101,6 @@ export default function RootLayout({
       className={`${roboto.className} ${roboto.variable} ${pacifico.variable}`}
     >
       <head>
-        <meta
-          name="robots"
-          content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache"
-        />
-        <meta
-          name="googlebot"
-          content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache"
-        />
       </head>
       <body>
         <Analytics />
