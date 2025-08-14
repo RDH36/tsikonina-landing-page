@@ -156,7 +156,7 @@ export default function PrivacyPage() {
             href="www.tsikonina.com/contact"
             className="text-primary hover:underline"
           >
-            www.tsikonina.com/contact
+            page contact
           </Link>
           .
         </p>
