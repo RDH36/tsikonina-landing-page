@@ -151,12 +151,9 @@ export default function PrivacyPage() {
         </h2>
         <p className="text-gray-700 mb-6">
           Si vous avez des questions ou des préoccupations concernant cette
-          politique de confidentialité, veuillez nous contacter{" "}
-          <Link
-            href="www.tsikonina.com/contact"
-            className="text-primary hover:underline"
-          >
-            page contact
+          politique de confidentialité, veuillez nous contacter sur la page{" "}
+          <Link href="/contact" className="text-primary hover:underline">
+            contact
           </Link>
           .
         </p>
